@@ -14,3 +14,7 @@ func give_recommendation() -> void:
 	
 func store_recommendation() -> void:
 	pass
+
+func get_fatigue_score() -> float:
+	return reactionTimeScore + memoryScore + focusScore + mentalAgilityScore + decisionMakingScore
+	
