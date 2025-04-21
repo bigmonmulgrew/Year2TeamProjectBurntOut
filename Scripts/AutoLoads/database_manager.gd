@@ -11,7 +11,7 @@ var fatigueScore: float
 var reactionTimeScore: float
 var memoryScore: float
 var focusScore: float
-var mentalAgility: float
+var mentalAgilityScore: float
 var decisionMakingScore: float
 
 # User
