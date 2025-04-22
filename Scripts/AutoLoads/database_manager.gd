@@ -16,13 +16,13 @@ var userAdditional: String
 var employeeTeams: Array[int]
 var employeeFatigueScore: int
 
-func query_user() -> bool:
+func query_user(username: String, passwordHash: String) -> String:
 	if username != DEBUG_USER or passwordHash != DEBUG_PASSWORD:
 		print("Incorrect username or password")
-		return false
+		return "1111111111"
 	else:
 		print("User logged in")	
-		return true
+		return "0000000000"
 
 func store_data(reactionTimeScore: float, memoryScore: float, focusScore: float, mentalAgilityScore: float, decisionMakingScore: float) -> void:
 	# TODO database implementation team to provide Databse connector
