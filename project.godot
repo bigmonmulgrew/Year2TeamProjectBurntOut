@@ -22,6 +22,9 @@ LevelManager="*res://Scripts/AutoLoads/level_manager.gd"
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 OptionsManager="*res://Scenes/_autoloads/options_manager.tscn"
 AudioManager="*res://Scenes/_autoloads/audio_manager.tscn"
+DatabaseManager="*res://Scripts/AutoLoads/database_manager.gd"
+LoginController="*res://Scripts/AutoLoads/login_controller.gd"
+RecommendationEngine="*res://Scripts/AutoLoads/recommendation_engine.gd"
 
 [display]
 
