@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1qulakchfluv"]
+[gd_scene load_steps=3 format=3 uid="uid://d1qulakchfluv"]
 
+[ext_resource type="Script" uid="uid://dkvoi7kqdtryb" path="res://Scripts/splash_screen.gd" id="1_ga3p3"]
 [ext_resource type="Texture2D" uid="uid://bgsjjrm2miwgp" path="res://Images/Sprites/splash_screen.png" id="1_wcqbv"]
 
 [node name="SplashScreen" type="Node2D"]
+script = ExtResource("1_ga3p3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.25195, 1.05566)
@@ -10,7 +12,6 @@ texture = ExtResource("1_wcqbv")
 centered = false
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
