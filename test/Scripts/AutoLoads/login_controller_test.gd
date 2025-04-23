@@ -14,4 +14,4 @@ func test_authenticate_with_thumb() -> void:
 
 func test_authenticate() -> void:
 	# remove this line and complete your test
-	assert_bool(LoginController.authenticate().is_true()
+	assert_bool(LoginController.authenticate()).is_true()

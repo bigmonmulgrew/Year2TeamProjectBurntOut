@@ -31,7 +31,7 @@ func store_data(reactionTimeScore: float, memoryScore: float, focusScore: float,
 	var timestamp: String = Time.get_datetime_string_from_system()
 		
 	sqlQuery = "INSERT INTO UserStats (username, fatigueScore, timestamp) " + \
-             "VALUES ('%s', %f, '%s') " % [username, fatigueScore, timestamp]
+			 "VALUES ('%s', %f, '%s') " % [username, fatigueScore, timestamp]
 	
 	print("Database content stored successfully.\n")
 	print("Database query string: " + sqlQuery)
@@ -40,5 +40,3 @@ func store_data(reactionTimeScore: float, memoryScore: float, focusScore: float,
 # Now in recommendation en gine since that is where they are stored
 #func find_valid_feedback() -> void:
 #	pass
-
-
