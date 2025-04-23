@@ -8,10 +8,8 @@ const userThumbHash: String = "XXXXXXDEBUGXXXXXX"
 func _on_button_button_down() -> void:
 	timer.start()
 
-
 func _on_button_button_up() -> void:
 	timer.stop()
-
 
 func _on_timer_timeout() -> void:
 	var loginSuccessful: bool = LoginController.authenticate_with_thumb(userThumbHash)
