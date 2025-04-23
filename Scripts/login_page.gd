@@ -14,8 +14,12 @@ func _on_button_button_up() -> void:
 
 
 func _on_timer_timeout() -> void:
-	LoginController.authenticate_with_thumb(userThumbHash)
-	LevelManager.load_main_menu()
+	var loginSuccessful: bool = LoginController.authenticate_with_thumb(userThumbHash)
+	if loginSuccessful:
+		LevelManager.load_main_menu()
+	else:
+		print("Login failed")
+		# TODO consider updating UI
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
