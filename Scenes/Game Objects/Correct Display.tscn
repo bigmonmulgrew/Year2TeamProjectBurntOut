@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgj7v2ms6hiot"]
+
+[ext_resource type="Texture2D" uid="uid://d00tu3anv64qv" path="res://Images/UI/UI Circle.png" id="1_ofl0h"]
+[ext_resource type="Texture2D" uid="uid://icc5tleo7bdy" path="res://Images/UI/Tick.png" id="2_pteog"]
+
+[node name="CorrectDisplay" type="Node"]
+
+[node name="UiCircle" type="Sprite2D" parent="."]
+position = Vector2(133, 118.5)
+texture = ExtResource("1_ofl0h")
+
+[node name="Tick" type="Sprite2D" parent="UiCircle"]
+position = Vector2(-1, -56.5)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_pteog")
+
+[node name="Correct" type="RichTextLabel" parent="UiCircle/Tick"]
+offset_left = -406.94
+offset_top = 50.0
+offset_right = 393.06
+offset_bottom = 850.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/normal_font_size = 500
+text = "0/0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

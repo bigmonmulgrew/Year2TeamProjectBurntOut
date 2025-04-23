@@ -1,3 +1,87 @@
-[gd_scene format=3 uid="uid://n4uudl35iix6"]
+[gd_scene load_steps=12 format=3 uid="uid://n4uudl35iix6"]
+
+[ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_vvbnm"]
+[ext_resource type="Texture2D" uid="uid://cye3ijxvljkkr" path="res://Images/Sprites/Jigsaw 0.png" id="2_dn8gv"]
+[ext_resource type="Texture2D" uid="uid://cqmj2gfh1pgrf" path="res://Images/Sprites/Jigsaw 1.png" id="3_yayg5"]
+[ext_resource type="Texture2D" uid="uid://d2grxpe7hnoel" path="res://Images/Sprites/Jigsaw 2.png" id="4_os5sr"]
+[ext_resource type="Texture2D" uid="uid://wmfcfl3u8qrb" path="res://Images/Sprites/Jigsaw 3.png" id="5_obkmc"]
+[ext_resource type="Texture2D" uid="uid://wwblrybps3sr" path="res://Images/Sprites/Jigsaw 4.png" id="6_sqpao"]
+[ext_resource type="Texture2D" uid="uid://cntpur4tny1km" path="res://Images/Sprites/Jigsaw 5.png" id="7_8c414"]
+[ext_resource type="Texture2D" uid="uid://clhyiijit455v" path="res://Images/Sprites/Jigsaw 6.png" id="8_rcnel"]
+[ext_resource type="Texture2D" uid="uid://6k27alubu6xm" path="res://Images/Sprites/Jigsaw 7.png" id="9_w81ii"]
+[ext_resource type="Texture2D" uid="uid://8rdgwl3j5qxw" path="res://Images/Sprites/Jigsaw 8.png" id="10_84dxb"]
+[ext_resource type="Texture2D" uid="uid://deupces87mla7" path="res://Images/Sprites/Jigsaw Grid.png" id="11_cvfsg"]
 
 [node name="MentalAgilityGame" type="Node2D"]
+
+[node name="GameTimer" parent="." instance=ExtResource("1_vvbnm")]
+
+[node name="Title" type="RichTextLabel" parent="."]
+offset_left = 520.0
+offset_top = 64.0
+offset_right = 1320.0
+offset_bottom = 163.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+text = "Mental Agility Game 4/5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jigsaw0" type="Sprite2D" parent="."]
+position = Vector2(651, 425)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_dn8gv")
+
+[node name="Jigsaw1" type="Sprite2D" parent="."]
+position = Vector2(901, 425)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_yayg5")
+
+[node name="Jigsaw2" type="Sprite2D" parent="."]
+position = Vector2(1151, 425)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("4_os5sr")
+
+[node name="Jigsaw3" type="Sprite2D" parent="."]
+position = Vector2(651, 675)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_obkmc")
+
+[node name="Jigsaw4" type="Sprite2D" parent="."]
+position = Vector2(901, 675)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("6_sqpao")
+
+[node name="Jigsaw5" type="Sprite2D" parent="."]
+position = Vector2(1151, 675)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_8c414")
+
+[node name="Jigsaw6" type="Sprite2D" parent="."]
+position = Vector2(651, 925)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("8_rcnel")
+
+[node name="Jigsaw7" type="Sprite2D" parent="."]
+position = Vector2(901, 925)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("9_w81ii")
+
+[node name="Jigsaw8" type="Sprite2D" parent="."]
+position = Vector2(1151, 925)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("10_84dxb")
+
+[node name="JigsawGrid" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("11_cvfsg")
