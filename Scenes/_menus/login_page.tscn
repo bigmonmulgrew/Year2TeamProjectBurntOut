@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj1ipyjmimsuc"]
+
+[ext_resource type="Script" uid="uid://dk6wrur3ee3fm" path="res://Scripts/login_page.gd" id="1_7rm6a"]
+[ext_resource type="Texture2D" uid="uid://ca5niowhfohcf" path="res://Images/Icons/fingerprint.webp" id="2_mrleg"]
+
+[node name="LoginPage" type="Node2D"]
+script = ExtResource("1_7rm6a")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 856.0
+offset_top = 436.0
+offset_right = 1064.0
+offset_bottom = 644.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/icon_pressed_color = Color(0.357142, 0.556103, 1, 1)
+icon = ExtResource("2_mrleg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.133
+offset_bottom = 1.336
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press and hold to login"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="Button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.279
+offset_left = 12.0
+offset_top = 239.0
+offset_right = -12.0
+offset_bottom = -0.0320129
+max_value = 1.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
