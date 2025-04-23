@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu0fddx8ifwlc"]
+
+[ext_resource type="Script" uid="uid://crdk0lwl236mr" path="res://Scripts/Minigames/game_timer.gd" id="1_eyqlv"]
+[ext_resource type="Texture2D" uid="uid://d00tu3anv64qv" path="res://Images/UI/UI Circle.png" id="2_rfllk"]
+[ext_resource type="Texture2D" uid="uid://c2nyc3ddx4trd" path="res://Images/UI/Clock.png" id="3_vyowy"]
+
+[node name="GameTimer" type="Timer"]
+script = ExtResource("1_eyqlv")
+
+[node name="UiCircle" type="Sprite2D" parent="."]
+position = Vector2(1800.5, 118.5)
+texture = ExtResource("2_rfllk")
+
+[node name="TimeText" type="RichTextLabel" parent="."]
+offset_left = 1708.5
+offset_top = 108.5
+offset_right = 1895.5
+offset_bottom = 211.5
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 72
+text = "2:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Clock" type="Sprite2D" parent="."]
+position = Vector2(1800.5, 69.5001)
+scale = Vector2(0.171875, 0.171875)
+texture = ExtResource("3_vyowy")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]

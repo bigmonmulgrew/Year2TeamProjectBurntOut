@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b76f2gih7f1jo"]
 
-[ext_resource type="Theme" uid="uid://duemvjths1y6w" path="res://Themes/menu_theme.tres" id="3_xuq28"]
+[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="1_b6tf0"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -25,14 +25,17 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -330.0
-offset_top = -31.0
-offset_right = -73.0
-offset_bottom = 35.0
+offset_left = -1725.0
+offset_top = 375.0
+offset_right = -1452.0
+offset_bottom = 476.0
 grow_horizontal = 0
 grow_vertical = 2
-theme = ExtResource("3_xuq28")
-text = "Start
+theme = ExtResource("1_b6tf0")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+text = "Begin Test
 "
 
 [node name="OptionsButton" type="Button" parent="."]
@@ -42,14 +45,17 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -330.0
-offset_top = 69.0
-offset_right = -73.0
-offset_bottom = 135.0
+offset_left = -1093.0
+offset_top = 375.0
+offset_right = -820.0
+offset_bottom = 476.0
 grow_horizontal = 0
 grow_vertical = 2
-theme = ExtResource("3_xuq28")
-text = "Options
+theme = ExtResource("1_b6tf0")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+text = "Dashboard
 "
 
 [node name="ExitButton" type="Button" parent="."]
@@ -59,14 +65,81 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -334.0
-offset_top = 165.0
-offset_right = -77.0
-offset_bottom = 231.0
+offset_left = -465.0
+offset_top = 375.0
+offset_right = -192.0
+offset_bottom = 476.0
 grow_horizontal = 0
 grow_vertical = 2
-theme = ExtResource("3_xuq28")
+theme = ExtResource("1_b6tf0")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
 text = "Exit"
+
+[node name="Score Visual" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 252.0
+offset_right = 1578.0
+offset_bottom = 442.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 96
+theme_override_font_sizes/italics_font_size = 96
+theme_override_font_sizes/mono_font_size = 96
+theme_override_font_sizes/normal_font_size = 96
+theme_override_font_sizes/bold_font_size = 96
+text = "Today's Score: 24/50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 596.0
+offset_top = 64.0
+offset_right = 1264.0
+offset_bottom = 163.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+text = "Fatigue Project"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Recommendation Text" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 469.0
+offset_right = 1539.0
+offset_bottom = 751.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+text = "Try resting more to help with reaction times.
+Take the rest of the day off"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]
 [connection signal="button_down" from="OptionsButton" to="." method="_on_options_button_button_down"]
