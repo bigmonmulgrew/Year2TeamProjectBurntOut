@@ -35,6 +35,7 @@ theme = ExtResource("1_b6tf0")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
 text = "Begin Test
 "
 
@@ -55,6 +56,7 @@ theme = ExtResource("1_b6tf0")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
 text = "Dashboard
 "
 
@@ -75,6 +77,7 @@ theme = ExtResource("1_b6tf0")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
 text = "Exit"
 
 [node name="Score Visual" type="RichTextLabel" parent="."]

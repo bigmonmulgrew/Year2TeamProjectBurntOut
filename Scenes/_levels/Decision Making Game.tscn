@@ -1,3 +1,125 @@
-[gd_scene format=3 uid="uid://mf84u4bt4i6c"]
+[gd_scene load_steps=3 format=3 uid="uid://mf84u4bt4i6c"]
+
+[ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_1ymnf"]
+[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_2ggpf"]
 
 [node name="DecisionMakingGame" type="Node2D"]
+
+[node name="GameTimer" parent="." instance=ExtResource("1_1ymnf")]
+
+[node name="Title" type="RichTextLabel" parent="."]
+offset_left = 504.0
+offset_top = 64.0
+offset_right = 1352.0
+offset_bottom = 163.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+text = "Decision Making Game 5/5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Question" type="RichTextLabel" parent="."]
+offset_left = 296.0
+offset_top = 252.0
+offset_right = 1578.0
+offset_bottom = 573.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 96
+theme_override_font_sizes/italics_font_size = 96
+theme_override_font_sizes/mono_font_size = 96
+theme_override_font_sizes/normal_font_size = 96
+theme_override_font_sizes/bold_font_size = 96
+text = "Where would you go on holiday if given the choice?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Answer 1" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 341.0
+offset_top = 660.0
+offset_right = 803.0
+offset_bottom = 831.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_2ggpf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "A Beach"
+
+[node name="Answer 2" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1086.0
+offset_top = 660.0
+offset_right = 1548.0
+offset_bottom = 831.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_2ggpf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "A Ski Resort
+"
+
+[node name="Answer 3" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 341.0
+offset_top = 860.0
+offset_right = 803.0
+offset_bottom = 1031.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_2ggpf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "A Village"
+
+[node name="Answer 4" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1086.0
+offset_top = 860.0
+offset_right = 1548.0
+offset_bottom = 1031.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_2ggpf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "A City"
