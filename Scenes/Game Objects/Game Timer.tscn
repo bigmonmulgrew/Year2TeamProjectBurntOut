@@ -8,14 +8,14 @@
 script = ExtResource("1_eyqlv")
 
 [node name="UiCircle" type="Sprite2D" parent="."]
-position = Vector2(114, 117)
+position = Vector2(1800.5, 118.5)
 texture = ExtResource("2_rfllk")
 
 [node name="TimeText" type="RichTextLabel" parent="."]
-offset_left = 22.0
-offset_top = 107.0
-offset_right = 209.0
-offset_bottom = 210.0
+offset_left = 1708.5
+offset_top = 108.5
+offset_right = 1895.5
+offset_bottom = 211.5
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 72
 text = "2:00"
@@ -23,6 +23,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Clock" type="Sprite2D" parent="."]
-position = Vector2(114, 68.0001)
+position = Vector2(1800.5, 69.5001)
 scale = Vector2(0.171875, 0.171875)
 texture = ExtResource("3_vyowy")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]
