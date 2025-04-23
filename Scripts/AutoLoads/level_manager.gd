@@ -17,7 +17,6 @@ func _deferred_load_level(level):
 	current_scene = new_scene.instantiate()
 	
 	get_tree().get_root().add_child(current_scene)
-	
 	get_tree().set_current_scene(current_scene)
 
 # Called when the node enters the scene tree for the first time.
