@@ -1,5 +1,7 @@
 extends Node2D
 
+const userThumbHash: String = "XXXXXXDEBUGXXXXXX"
+
 @onready var timer: Timer = $Timer
 @onready var progress_bar: ProgressBar = $Button/ProgressBar
 
@@ -12,6 +14,7 @@ func _on_button_button_up() -> void:
 
 
 func _on_timer_timeout() -> void:
+	LoginController.authenticate_with_thumb(userThumbHash)
 	LevelManager.load_main_menu()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
