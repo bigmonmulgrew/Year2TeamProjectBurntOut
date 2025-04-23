@@ -18,13 +18,13 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*res://Scripts/AutoLoads/game_manager.gd"
-LevelManager="*res://Scripts/AutoLoads/level_manager.gd"
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 OptionsManager="*res://Scenes/_autoloads/options_manager.tscn"
 AudioManager="*res://Scenes/_autoloads/audio_manager.tscn"
 DatabaseManager="*res://Scripts/AutoLoads/database_manager.gd"
 LoginController="*res://Scripts/AutoLoads/login_controller.gd"
 RecommendationEngine="*res://Scripts/AutoLoads/recommendation_engine.gd"
+LevelManager="*res://Scenes/_autoloads/level_manager.tscn"
 
 [display]
 
@@ -131,3 +131,7 @@ jump={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":10,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://rim57nqutrm6"]
+
+[ext_resource type="Script" uid="uid://p6jrdho7ocdv" path="res://Scripts/AutoLoads/level_manager.gd" id="1_g401l"]
+[ext_resource type="PackedScene" uid="uid://b76f2gih7f1jo" path="res://Scenes/_menus/main_menu.tscn" id="2_kwkqk"]
+[ext_resource type="PackedScene" uid="uid://c7ocvb2duj8e6" path="res://Scenes/_levels/level_debug.tscn" id="3_ryrv5"]
+[ext_resource type="PackedScene" uid="uid://cj1ipyjmimsuc" path="res://Scenes/_menus/login_page.tscn" id="3_swei0"]
+
+[node name="LevelManager" type="Node"]
+script = ExtResource("1_g401l")
+mainMenu = ExtResource("2_kwkqk")
+loginScreen = ExtResource("3_swei0")
+userDashboard = ExtResource("3_ryrv5")
+reactionTimeLevel = ExtResource("3_ryrv5")
+memoryLevel = ExtResource("3_ryrv5")
+focusLevel = ExtResource("3_ryrv5")
+mentalAgilityLevel = ExtResource("3_ryrv5")
+decisionMakingLevel = ExtResource("3_ryrv5")
