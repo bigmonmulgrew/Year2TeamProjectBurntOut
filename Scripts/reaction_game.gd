@@ -1,15 +1,20 @@
 extends Game
 
+@export var cycle_timer: float
+@export var win_score: int
+@export var lose_score: int
+
+@export_category("Score Weighting")
+@export var CORRECT_SCORE_VALUE: int = 1
+@export var INCORRECT_SCORE_VALUE: int = -3
+@export var TIMER_SCORE_VALUE: int = -5
+
 @onready var timer = $CentreCardTimer
 @onready var centre_card = $CentreCard
 @onready var current_card_sprite = $CurrentCard
 @onready var feedback_display = $CorrectIncorrectDisplay
 @onready var correct_label = $CorrectIncorrectDisplay/UiCircleLong/Tick/Correct
 @onready var incorrect_label = $CorrectIncorrectDisplay/UiCircleLong/Cross/Incorrect
-
-@export var cycle_timer: float
-@export var win_score: int
-@export var lose_score: int
 
 # Card Textures (loading images)
 var card_textures: Dictionary = {
@@ -48,6 +53,7 @@ func _on_CentreCardButton_pressed() -> void:
 		if correct_score < win_score:
 			pick_new_current_card()
 		else:
+			userScore = _calculate_score()
 			win_game()
 	else:
 		incorrect_score += 1
@@ -55,6 +61,21 @@ func _on_CentreCardButton_pressed() -> void:
 		if incorrect_score >= lose_score:
 			# end the game, do we have a method for this already?
 			pass
+
+func _calculate_score() -> int:
+	var score: int = 0
+	
+	var timerScore: float = 0 
+	if timer.time_remaining <= 0:
+		timerScore = TIMER_SCORE_VALUE
+	
+	score = correct_score * CORRECT_SCORE_VALUE \
+			+ incorrect_score * INCORRECT_SCORE_VALUE \
+			+ timerScore
+			
+	score = clamp(score, 0, 10)
+	
+	return score
 
 func _on_centre_card_timer_timeout() -> void:
 	show_random_centre_card()
