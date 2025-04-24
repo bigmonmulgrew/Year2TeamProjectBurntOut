@@ -2,17 +2,17 @@ extends Node
 
 ## Configuration
 @export_category("Default Screens")
-@export var mainMenu: PackedScene
-@export var loginScreen: PackedScene
-@export var userDashboard: PackedScene
+@export var mainMenu: 		PackedScene
+@export var loginScreen: 	PackedScene
+@export var userDashboard: 	PackedScene
 
 # Minigames
 @export_category("Mninigames")
-@export var reactionTimeLevel: PackedScene
-@export var memoryLevel: PackedScene
-@export var focusLevel: PackedScene
-@export var mentalAgilityLevel: PackedScene
-@export var decisionMakingLevel: PackedScene
+@export var reactionTimeLevels: 	Array[PackedScene]
+@export var memoryLevels: 		Array[PackedScene]
+@export var focusLevels:			Array[PackedScene]
+@export var mentalAgilityLevels:	Array[PackedScene]
+@export var decisionMakingLevels:Array[PackedScene]
 
 ## Runtime variables
 var current_scene : Node
@@ -56,3 +56,20 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+func get_random_focus_level():
+	return focusLevels[randi() % focusLevels.size()]
+
+func get_random_reaction_level():
+	return reactionTimeLevels[randi() % reactionTimeLevels.size()]
+
+func get_random_agility_level():
+	return mentalAgilityLevels[randi() % mentalAgilityLevels.size()]
+
+func get_random_decision_level():
+	return decisionMakingLevels[randi() % decisionMakingLevels.size()]
+
+func get_random_memory_level():
+	return memoryLevels[randi() % memoryLevels.size()]
+
+
