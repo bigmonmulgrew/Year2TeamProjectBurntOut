@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b76f2gih7f1jo"]
+[gd_scene load_steps=3 format=3 uid="uid://b76f2gih7f1jo"]
 
 [ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="1_b6tf0"]
+[ext_resource type="Script" uid="uid://xmjxem4mw0hj" path="res://Scripts/main_menu.gd" id="1_j50xq"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_j50xq")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -39,7 +41,7 @@ theme_override_font_sizes/font_size = 40
 text = "Begin Test
 "
 
-[node name="OptionsButton" type="Button" parent="."]
+[node name="DashboardButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -145,5 +147,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]
-[connection signal="button_down" from="OptionsButton" to="." method="_on_options_button_button_down"]
+[connection signal="button_down" from="DashboardButton" to="." method="_on_dashboard_button_button_down"]
 [connection signal="button_down" from="ExitButton" to="." method="_on_exit_button_button_down"]
