@@ -6,6 +6,7 @@ const GAME_NUMBER_LIST: Array[int] = [0, 1, 2, 3, 4]
 ## Runtime variables
 var gameNumbers: Array[int]
 var game: Game
+var totalScore: float = 0
 
 var sessionsComplete: int = 0
 
@@ -58,22 +59,23 @@ func _load_next_game():
 	sessionsComplete += 1
 	var gameType = _pick_random_unique()
 	match gameType:
-		1:
+		0:
 			LevelManager.load_level(LevelManager.get_random_focus_level())
-		2:
+		1:
 			LevelManager.load_level(LevelManager.get_random_reaction_level())
-		3:
+		2:
 			LevelManager.load_level(LevelManager.get_random_agility_level())
-		4:
+		3:
 			LevelManager.load_level(LevelManager.get_random_decision_level())
-		5:
+		4:
 			LevelManager.load_level(LevelManager.get_random_memory_level())
 		-1:
 			LevelManager.load_main_menu()
 	
 
-func next_level():
+func next_level(score: float = 0):
 	# Call with "GameManager.next_level()"
+	totalScore += score
 	_load_next_game()
 
 func begin_play():
