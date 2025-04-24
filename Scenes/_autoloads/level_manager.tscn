@@ -1,17 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://rim57nqutrm6"]
+[gd_scene load_steps=10 format=3 uid="uid://rim57nqutrm6"]
 
 [ext_resource type="Script" uid="uid://p6jrdho7ocdv" path="res://Scripts/AutoLoads/level_manager.gd" id="1_g401l"]
 [ext_resource type="PackedScene" uid="uid://b76f2gih7f1jo" path="res://Scenes/_menus/main_menu.tscn" id="2_kwkqk"]
 [ext_resource type="PackedScene" uid="uid://c7ocvb2duj8e6" path="res://Scenes/_levels/level_debug.tscn" id="3_ryrv5"]
 [ext_resource type="PackedScene" uid="uid://cj1ipyjmimsuc" path="res://Scenes/_menus/login_page.tscn" id="3_swei0"]
+[ext_resource type="PackedScene" uid="uid://dju6144cx18sx" path="res://Scenes/_levels/Reaction Game.tscn" id="5_q834j"]
+[ext_resource type="PackedScene" uid="uid://b1ud12qggsyx6" path="res://Scenes/_levels/Memory Game.tscn" id="6_60olj"]
+[ext_resource type="PackedScene" uid="uid://dime18kwuj0b4" path="res://Scenes/_levels/FocusGame.tscn" id="7_nqpxu"]
+[ext_resource type="PackedScene" uid="uid://n4uudl35iix6" path="res://Scenes/_levels/Mental Agility Game.tscn" id="8_m6o12"]
+[ext_resource type="PackedScene" uid="uid://mf84u4bt4i6c" path="res://Scenes/_levels/Decision Making Game.tscn" id="9_a6pvg"]
 
 [node name="LevelManager" type="Node"]
 script = ExtResource("1_g401l")
 mainMenu = ExtResource("2_kwkqk")
 loginScreen = ExtResource("3_swei0")
 userDashboard = ExtResource("3_ryrv5")
-reactionTimeLevel = ExtResource("3_ryrv5")
-memoryLevel = ExtResource("3_ryrv5")
-focusLevel = ExtResource("3_ryrv5")
-mentalAgilityLevel = ExtResource("3_ryrv5")
-decisionMakingLevel = ExtResource("3_ryrv5")
+reactionTimeLevels = Array[PackedScene]([ExtResource("5_q834j")])
+memoryLevels = Array[PackedScene]([ExtResource("6_60olj")])
+focusLevels = Array[PackedScene]([ExtResource("7_nqpxu")])
+mentalAgilityLevels = Array[PackedScene]([ExtResource("8_m6o12")])
+decisionMakingLevels = Array[PackedScene]([ExtResource("9_a6pvg")])
