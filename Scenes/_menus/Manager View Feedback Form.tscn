@@ -1,0 +1,333 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm0nwhy8vpg75"]
+
+[ext_resource type="Texture2D" uid="uid://dunh4s88ls6p1" path="res://Images/UI/UI Circle Super Long.png" id="1_qdvul"]
+[ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="2_sxiqe"]
+[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="3_8e2cf"]
+
+[node name="EmployeeFeedbackForm" type="Node2D"]
+
+[node name="UiCircleSuperLong" type="Sprite2D" parent="."]
+position = Vector2(1316, 134)
+texture = ExtResource("1_qdvul")
+
+[node name="Strongly Disagree" type="RichTextLabel" parent="UiCircleSuperLong"]
+offset_left = -553.0
+offset_top = -91.0
+offset_right = -294.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "Strongly
+Disagree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Disagree" type="RichTextLabel" parent="UiCircleSuperLong"]
+offset_left = -337.0
+offset_top = -91.0
+offset_right = -78.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "Disagree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NeitherAgreeorDisagree" type="RichTextLabel" parent="UiCircleSuperLong"]
+offset_left = -122.0
+offset_top = -91.0
+offset_right = 137.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "Neither
+Agree or
+Disagree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Agree" type="RichTextLabel" parent="UiCircleSuperLong"]
+offset_left = 86.0
+offset_top = -91.0
+offset_right = 345.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "Agree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StronglyAgree" type="RichTextLabel" parent="UiCircleSuperLong"]
+offset_left = 302.0
+offset_top = -91.0
+offset_right = 561.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "Strongly
+Agree"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Question 1" type="Sprite2D" parent="."]
+position = Vector2(962.919, 362)
+rotation = 1.5708
+scale = Vector2(0.966, 5)
+texture = ExtResource("2_sxiqe")
+
+[node name="Question" type="RichTextLabel" parent="Question 1"]
+offset_left = -113.0
+offset_top = 184.0
+offset_right = 691.0
+offset_bottom = 276.0
+rotation = -1.5708
+scale = Vector2(0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "I find it diffucult to stay focused on tasks today."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Question 1"]
+offset_left = -88.0
+offset_top = 19.0
+offset_right = 214.0
+offset_bottom = 35.0
+rotation = -1.5708
+scale = Vector2(0.6, 3)
+
+[node name="Question 2" type="Sprite2D" parent="."]
+position = Vector2(962.919, 482)
+rotation = 1.5708
+scale = Vector2(0.966, 5)
+texture = ExtResource("2_sxiqe")
+
+[node name="Question" type="RichTextLabel" parent="Question 2"]
+offset_left = -113.0
+offset_top = 184.0
+offset_right = 691.0
+offset_bottom = 276.0
+rotation = -1.5708
+scale = Vector2(0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "I notice my reactions are slower than normal."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Question 2"]
+offset_left = -88.0
+offset_top = 19.0
+offset_right = 214.0
+offset_bottom = 35.0
+rotation = -1.5708
+scale = Vector2(0.6, 3)
+
+[node name="Question 3" type="Sprite2D" parent="."]
+position = Vector2(962.919, 602)
+rotation = 1.5708
+scale = Vector2(0.966, 5)
+texture = ExtResource("2_sxiqe")
+
+[node name="Question" type="RichTextLabel" parent="Question 3"]
+offset_left = -113.0
+offset_top = 184.0
+offset_right = 691.0
+offset_bottom = 276.0
+rotation = -1.5708
+scale = Vector2(0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "I make more mistakes than usual when working or solving problems."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Question 3"]
+offset_left = -88.0
+offset_top = 19.0
+offset_right = 214.0
+offset_bottom = 35.0
+rotation = -1.5708
+scale = Vector2(0.6, 3)
+
+[node name="Question 4" type="Sprite2D" parent="."]
+position = Vector2(962.919, 722)
+rotation = 1.5708
+scale = Vector2(0.966, 5)
+texture = ExtResource("2_sxiqe")
+
+[node name="Question" type="RichTextLabel" parent="Question 4"]
+offset_left = -113.0
+offset_top = 184.0
+offset_right = 691.0
+offset_bottom = 276.0
+rotation = -1.5708
+scale = Vector2(0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "I feel fatigued even after resting or taking breaks."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Question 4"]
+offset_left = -88.0
+offset_top = 19.0
+offset_right = 214.0
+offset_bottom = 35.0
+rotation = -1.5708
+scale = Vector2(0.6, 3)
+
+[node name="Question 5" type="Sprite2D" parent="."]
+position = Vector2(962.919, 842)
+rotation = 1.5708
+scale = Vector2(0.966, 5)
+texture = ExtResource("2_sxiqe")
+
+[node name="Question" type="RichTextLabel" parent="Question 5"]
+offset_left = -113.0
+offset_top = 184.0
+offset_right = 691.0
+offset_bottom = 276.0
+rotation = -1.5708
+scale = Vector2(0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "I believe my current fatigue level may impact my performance today."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Question 5"]
+offset_left = -88.0
+offset_top = 19.0
+offset_right = 214.0
+offset_bottom = 35.0
+rotation = -1.5708
+scale = Vector2(0.6, 3)
+
+[node name="Menu" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 593.0
+offset_top = 934.0
+offset_right = 866.0
+offset_bottom = 1035.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("3_8e2cf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "Menu"
+
+[node name="Download" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1065.0
+offset_top = 934.0
+offset_right = 1338.0
+offset_bottom = 1035.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("3_8e2cf")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "Download"

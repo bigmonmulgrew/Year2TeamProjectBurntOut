@@ -1,0 +1,315 @@
+[gd_scene load_steps=3 format=3 uid="uid://beaudybbxfgbc"]
+
+[ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="1_y3vct"]
+[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_3t5gk"]
+
+[node name="EmployeeDashboard" type="Node2D"]
+
+[node name="Name Title" type="RichTextLabel" parent="."]
+offset_left = 296.0
+offset_top = 74.0
+offset_right = 1578.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 110
+theme_override_font_sizes/italics_font_size = 110
+theme_override_font_sizes/mono_font_size = 110
+theme_override_font_sizes/normal_font_size = 110
+theme_override_font_sizes/bold_font_size = 110
+text = "Name's Dashboard"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="History" type="RichTextLabel" parent="."]
+offset_left = 296.0
+offset_top = 265.0
+offset_right = 1578.0
+offset_bottom = 455.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 110
+theme_override_font_sizes/italics_font_size = 110
+theme_override_font_sizes/mono_font_size = 110
+theme_override_font_sizes/normal_font_size = 110
+theme_override_font_sizes/bold_font_size = 110
+text = "Fatigue Score History"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Recent" type="RichTextLabel" parent="."]
+offset_left = 230.0
+offset_top = 508.0
+offset_right = 489.0
+offset_bottom = 620.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 60
+theme_override_font_sizes/italics_font_size = 60
+theme_override_font_sizes/mono_font_size = 60
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 60
+text = "Recent"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Older" type="RichTextLabel" parent="."]
+offset_left = 1432.0
+offset_top = 508.0
+offset_right = 1691.0
+offset_bottom = 620.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 60
+theme_override_font_sizes/italics_font_size = 60
+theme_override_font_sizes/mono_font_size = 60
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 60
+text = "Older"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Arrow" type="Sprite2D" parent="."]
+position = Vector2(959.45, 564)
+rotation = 1.5708
+scale = Vector2(1, 2.69942)
+texture = ExtResource("1_y3vct")
+
+[node name="Line2" type="Sprite2D" parent="Arrow"]
+position = Vector2(-17.6646, -165.035)
+rotation = -2.78682
+scale = Vector2(0.754067, 0.149956)
+skew = 0.861245
+texture = ExtResource("1_y3vct")
+
+[node name="Line3" type="Sprite2D" parent="Arrow"]
+position = Vector2(20.3352, -165.035)
+rotation = 2.78682
+scale = Vector2(0.754067, 0.149956)
+skew = -0.861245
+texture = ExtResource("1_y3vct")
+
+[node name="Score 0" type="RichTextLabel" parent="."]
+offset_left = 157.0
+offset_top = 611.0
+offset_right = 519.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 225
+theme_override_font_sizes/italics_font_size = 225
+theme_override_font_sizes/mono_font_size = 225
+theme_override_font_sizes/normal_font_size = 225
+theme_override_font_sizes/bold_font_size = 225
+text = "24"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 1" type="RichTextLabel" parent="."]
+offset_left = 481.0
+offset_top = 611.0
+offset_right = 736.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 175
+theme_override_font_sizes/italics_font_size = 175
+theme_override_font_sizes/mono_font_size = 175
+theme_override_font_sizes/normal_font_size = 175
+theme_override_font_sizes/bold_font_size = 175
+text = "32"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 2" type="RichTextLabel" parent="."]
+offset_left = 712.0
+offset_top = 611.0
+offset_right = 976.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 175
+theme_override_font_sizes/italics_font_size = 175
+theme_override_font_sizes/mono_font_size = 175
+theme_override_font_sizes/normal_font_size = 175
+theme_override_font_sizes/bold_font_size = 175
+text = "16"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 3" type="RichTextLabel" parent="."]
+offset_left = 952.0
+offset_top = 611.0
+offset_right = 1216.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 175
+theme_override_font_sizes/italics_font_size = 175
+theme_override_font_sizes/mono_font_size = 175
+theme_override_font_sizes/normal_font_size = 175
+theme_override_font_sizes/bold_font_size = 175
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 4" type="RichTextLabel" parent="."]
+offset_left = 1200.0
+offset_top = 611.0
+offset_right = 1390.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 125
+theme_override_font_sizes/italics_font_size = 125
+theme_override_font_sizes/mono_font_size = 125
+theme_override_font_sizes/normal_font_size = 125
+theme_override_font_sizes/bold_font_size = 125
+text = "44"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 5" type="RichTextLabel" parent="."]
+offset_left = 1379.0
+offset_top = 611.0
+offset_right = 1571.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 125
+theme_override_font_sizes/italics_font_size = 125
+theme_override_font_sizes/mono_font_size = 125
+theme_override_font_sizes/normal_font_size = 125
+theme_override_font_sizes/bold_font_size = 125
+text = "48"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score 6" type="RichTextLabel" parent="."]
+offset_left = 1551.0
+offset_top = 611.0
+offset_right = 1745.0
+offset_bottom = 923.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/bold_italics_font_size = 125
+theme_override_font_sizes/italics_font_size = 125
+theme_override_font_sizes/mono_font_size = 125
+theme_override_font_sizes/normal_font_size = 125
+theme_override_font_sizes/bold_font_size = 125
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Line" type="Sprite2D" parent="."]
+position = Vector2(492.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Line2" type="Sprite2D" parent="."]
+position = Vector2(729.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Line3" type="Sprite2D" parent="."]
+position = Vector2(968.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Line4" type="Sprite2D" parent="."]
+position = Vector2(1205.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Line5" type="Sprite2D" parent="."]
+position = Vector2(1387.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Line6" type="Sprite2D" parent="."]
+position = Vector2(1563.25, 773.75)
+scale = Vector2(0.633333, 0.688406)
+texture = ExtResource("1_y3vct")
+
+[node name="Menu" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 593.0
+offset_top = 934.0
+offset_right = 866.0
+offset_bottom = 1035.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_3t5gk")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "Menu"
+
+[node name="Feeback Form" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1065.0
+offset_top = 934.0
+offset_right = 1338.0
+offset_bottom = 1035.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_3t5gk")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "Feedback
+Form"
