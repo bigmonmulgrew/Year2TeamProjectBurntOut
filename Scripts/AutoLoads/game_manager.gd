@@ -72,7 +72,6 @@ func _load_next_game():
 		-1:
 			LevelManager.load_main_menu()
 	
-
 func next_level(score: float = 0):
 	# Call with "GameManager.next_level()"
 	totalScore += score
