@@ -10,7 +10,7 @@ extends Sprite2D
 
 var selected_index: int = -1
 
-func _ready():
+func _ready() -> void:
 	for i in range(buttons.size()):
 		buttons[i].connect("pressed", Callable(self, "_on_button_pressed").bind(i))
 
