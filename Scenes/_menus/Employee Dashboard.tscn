@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://beaudybbxfgbc"]
+[gd_scene load_steps=4 format=3 uid="uid://beaudybbxfgbc"]
 
+[ext_resource type="Script" uid="uid://bbf122wi0qwl2" path="res://Scripts/employee_dashboard.gd" id="1_3t5gk"]
 [ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="1_y3vct"]
 [ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_3t5gk"]
 
 [node name="EmployeeDashboard" type="Node2D"]
+script = ExtResource("1_3t5gk")
 
 [node name="Name Title" type="RichTextLabel" parent="."]
 offset_left = 296.0
@@ -313,3 +315,6 @@ theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
 text = "Feedback
 Form"
+
+[connection signal="button_down" from="Menu" to="." method="_on_menu_button_down"]
+[connection signal="button_down" from="Feeback Form" to="." method="_on_feedback_button_down"]

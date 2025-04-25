@@ -2,23 +2,29 @@ extends Node
 
 ## Configuration
 @export_category("Default Screens")
-@export var mainMenu: 		PackedScene
-@export var loginScreen: 	PackedScene
-@export var userDashboard: 	PackedScene
+@export var mainMenu: 					PackedScene
+@export var loginScreen: 				PackedScene
+@export var employeeDashboard: 			PackedScene
+@export var recommendationPage: 		PackedScene
+@export var managerDashboard: 			PackedScene
+@export var employeeFeedbackForm: 		PackedScene
+@export var managerViewFeedbackForm: 	PackedScene
+@export var managerViewFatigueScores: 	PackedScene
 
 # Minigames
-@export_category("Mninigames")
+@export_category("Minigames")
 @export var reactionTimeLevels: 	Array[PackedScene]
-@export var memoryLevels: 		Array[PackedScene]
+@export var memoryLevels: 			Array[PackedScene]
 @export var focusLevels:			Array[PackedScene]
 @export var mentalAgilityLevels:	Array[PackedScene]
-@export var decisionMakingLevels:Array[PackedScene]
+@export var decisionMakingLevels:	Array[PackedScene]
 
 ## Runtime variables
 var current_scene : Node
 
 func load_level(level) -> void:
 	call_deferred("_deferred_load_level", level)
+
 
 func _deferred_load_level(level):
 	# Safety check since current_scene will be null on start
@@ -47,11 +53,28 @@ func load_main_menu():
 	
 func load_login_page():
 	load_level(loginScreen)
+	
+func load_dashboard(admin: bool = false):
+	if admin:
+		load_level(managerDashboard)
+	else:
+		load_level(employeeDashboard)
+
+func load_employee_feedback():
+	load_level(employeeFeedbackForm)
+
+func load_manager_view_feedback():
+	load_level(managerViewFeedbackForm)
+
+func load_manager_view_fatigue():
+	load_level(managerViewFatigueScores)
+
+func load_recommendation_page():
+	load_level(recommendationPage)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	current_scene = get_tree().get_current_scene()
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -71,5 +94,3 @@ func get_random_decision_level():
 
 func get_random_memory_level():
 	return memoryLevels[randi() % memoryLevels.size()]
-
-

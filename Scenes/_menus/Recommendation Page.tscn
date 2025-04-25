@@ -1,10 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7wyw3mt7atxv"]
+[gd_scene load_steps=3 format=3 uid="uid://c7wyw3mt7atxv"]
 
+[ext_resource type="Script" uid="uid://dexpd0v480ruv" path="res://Scripts/recommendation_page.gd" id="1_i21fi"]
 [ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="1_vfp3s"]
 
 [node name="RecimmendationPage" type="Node2D"]
+script = ExtResource("1_i21fi")
 
-[node name="Titel" type="RichTextLabel" parent="."]
+[node name="Title" type="RichTextLabel" parent="."]
 offset_left = 296.0
 offset_top = 74.0
 offset_right = 1578.0
@@ -83,3 +85,5 @@ theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
 text = "Return To
 Menu"
+
+[connection signal="button_down" from="Menu Button" to="." method="_on_menu_button_down"]

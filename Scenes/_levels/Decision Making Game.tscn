@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://mf84u4bt4i6c"]
+[gd_scene load_steps=4 format=3 uid="uid://mf84u4bt4i6c"]
 
 [ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_1ymnf"]
+[ext_resource type="Script" uid="uid://denee05i2lu0g" path="res://Scripts/decision_making_game.gd" id="1_ubfx4"]
 [ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_2ggpf"]
 
 [node name="DecisionMakingGame" type="Node2D"]
+script = ExtResource("1_ubfx4")
 
 [node name="GameTimer" parent="." instance=ExtResource("1_1ymnf")]
 
@@ -123,3 +125,8 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
 text = "A City"
+
+[connection signal="pressed" from="Answer 1" to="." method="_on_answer_pressed"]
+[connection signal="pressed" from="Answer 2" to="." method="_on_answer_pressed"]
+[connection signal="pressed" from="Answer 3" to="." method="_on_answer_pressed"]
+[connection signal="pressed" from="Answer 4" to="." method="_on_answer_pressed"]
