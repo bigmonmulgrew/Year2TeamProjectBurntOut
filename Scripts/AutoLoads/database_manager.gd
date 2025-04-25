@@ -40,3 +40,26 @@ func store_data(reactionTimeScore: float, memoryScore: float, focusScore: float,
 # Now in recommendation en gine since that is where they are stored
 #func find_valid_feedback() -> void:
 #	pass
+
+func get_fatigue_history(isManager: bool = false) -> Array[int]:
+	
+	print("Using canned data for debugging.")
+	
+	return [
+		randi() % 51,
+		randi() % 51,
+		randi() % 51,
+		randi() % 51,
+		randi() % 51
+	]
+	
+func get_feedback_history() -> Array[float]:
+	print("Using canned data for debugging.")
+	
+	return [
+		randf() * 5,
+		randf() * 5,
+		randf() * 5,
+		randf() * 5,
+		randf() * 5
+	]
