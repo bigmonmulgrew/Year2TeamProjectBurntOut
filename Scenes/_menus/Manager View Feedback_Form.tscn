@@ -145,12 +145,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HSlider" type="HSlider" parent="Question 1"]
+modulate = Color(0.717434, 0.745976, 0.925026, 1)
 offset_left = -88.0
 offset_top = 19.0
 offset_right = 214.0
 offset_bottom = 35.0
 rotation = -1.5708
 scale = Vector2(0.6, 3)
+min_value = 1.0
+max_value = 5.0
+step = 0.01
+value = 2.96
 
 [node name="Question 2" type="Sprite2D" parent="."]
 position = Vector2(962.919, 482)
@@ -181,12 +186,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HSlider" type="HSlider" parent="Question 2"]
+modulate = Color(0.717434, 0.745976, 0.925026, 1)
 offset_left = -88.0
 offset_top = 19.0
 offset_right = 214.0
 offset_bottom = 35.0
 rotation = -1.5708
 scale = Vector2(0.6, 3)
+min_value = 1.0
+max_value = 5.0
+step = 0.01
+value = 1.0
 
 [node name="Question 3" type="Sprite2D" parent="."]
 position = Vector2(962.919, 602)
@@ -217,12 +227,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HSlider" type="HSlider" parent="Question 3"]
+modulate = Color(0.717434, 0.745976, 0.925026, 1)
 offset_left = -88.0
 offset_top = 19.0
 offset_right = 214.0
 offset_bottom = 35.0
 rotation = -1.5708
 scale = Vector2(0.6, 3)
+min_value = 1.0
+max_value = 5.0
+step = 0.01
+value = 1.0
 
 [node name="Question 4" type="Sprite2D" parent="."]
 position = Vector2(962.919, 722)
@@ -253,12 +268,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HSlider" type="HSlider" parent="Question 4"]
+modulate = Color(0.717434, 0.745976, 0.925026, 1)
 offset_left = -88.0
 offset_top = 19.0
 offset_right = 214.0
 offset_bottom = 35.0
 rotation = -1.5708
 scale = Vector2(0.6, 3)
+min_value = 1.0
+max_value = 5.0
+step = 0.01
+value = 1.0
 
 [node name="Question 5" type="Sprite2D" parent="."]
 position = Vector2(962.919, 842)
@@ -289,12 +309,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HSlider" type="HSlider" parent="Question 5"]
+modulate = Color(0.717434, 0.745976, 0.925026, 1)
 offset_left = -88.0
 offset_top = 19.0
 offset_right = 214.0
 offset_bottom = 35.0
 rotation = -1.5708
 scale = Vector2(0.6, 3)
+min_value = 1.0
+max_value = 5.0
+step = 0.01
+value = 1.0
 
 [node name="Back" type="Button" parent="."]
 anchors_preset = 6
