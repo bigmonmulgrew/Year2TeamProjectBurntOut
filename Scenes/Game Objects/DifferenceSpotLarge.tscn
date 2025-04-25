@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://pfdghmqmhjxm"]
+
+[ext_resource type="Script" uid="uid://c4t1qpx2cpopm" path="res://Scripts/Minigames/spotthedifference.gd" id="1_rbr7u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sf7n1"]
+radius = 57.1402
+
+[node name="DifferenceSpot" type="Area2D"]
+script = ExtResource("1_rbr7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sf7n1")

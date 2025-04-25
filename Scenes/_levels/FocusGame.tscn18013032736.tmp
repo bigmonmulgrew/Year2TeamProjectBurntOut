@@ -112,7 +112,3 @@ position = Vector2(43.125, -44.375)
 [node name="DifferenceSpot7" parent="SpotTheDifference2" instance=ExtResource("6_3h05u")]
 position = Vector2(-116.25, 65.625)
 scale = Vector2(1, 1)
-
-[connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timeout"]
-
-[editable path="CorrectDisplay"]
