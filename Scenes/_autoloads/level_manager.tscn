@@ -1,20 +1,30 @@
-[gd_scene load_steps=10 format=3 uid="uid://rim57nqutrm6"]
+[gd_scene load_steps=15 format=3 uid="uid://rim57nqutrm6"]
 
 [ext_resource type="Script" uid="uid://p6jrdho7ocdv" path="res://Scripts/AutoLoads/level_manager.gd" id="1_g401l"]
 [ext_resource type="PackedScene" uid="uid://b76f2gih7f1jo" path="res://Scenes/_menus/main_menu.tscn" id="2_kwkqk"]
-[ext_resource type="PackedScene" uid="uid://c7ocvb2duj8e6" path="res://Scenes/_levels/level_debug.tscn" id="3_ryrv5"]
 [ext_resource type="PackedScene" uid="uid://cj1ipyjmimsuc" path="res://Scenes/_menus/login_page.tscn" id="3_swei0"]
+[ext_resource type="PackedScene" uid="uid://beaudybbxfgbc" path="res://Scenes/_menus/Employee Dashboard.tscn" id="4_r20as"]
+[ext_resource type="PackedScene" uid="uid://c7wyw3mt7atxv" path="res://Scenes/_menus/Recommendation Page.tscn" id="5_cydqj"]
 [ext_resource type="PackedScene" uid="uid://dju6144cx18sx" path="res://Scenes/_levels/Reaction Game.tscn" id="5_q834j"]
 [ext_resource type="PackedScene" uid="uid://b1ud12qggsyx6" path="res://Scenes/_levels/Memory Game.tscn" id="6_60olj"]
+[ext_resource type="PackedScene" uid="uid://cqhb3etbp7jpy" path="res://Scenes/_menus/Employee Feedback Form.tscn" id="7_827wk"]
 [ext_resource type="PackedScene" uid="uid://dime18kwuj0b4" path="res://Scenes/_levels/FocusGame.tscn" id="7_nqpxu"]
+[ext_resource type="PackedScene" uid="uid://dm0nwhy8vpg75" path="res://Scenes/_menus/Manager View Feedback.tscn" id="8_2mo6i"]
 [ext_resource type="PackedScene" uid="uid://n4uudl35iix6" path="res://Scenes/_levels/Mental Agility Game.tscn" id="8_m6o12"]
 [ext_resource type="PackedScene" uid="uid://mf84u4bt4i6c" path="res://Scenes/_levels/Decision Making Game.tscn" id="9_a6pvg"]
+[ext_resource type="PackedScene" uid="uid://wpfydvfdb2pw" path="res://Scenes/_menus/Manager View Fatigue Scores.tscn" id="9_r20as"]
+[ext_resource type="PackedScene" uid="uid://dmy6cdcqwwaa7" path="res://Scenes/_menus/Manager Dashboard.tscn" id="9_wjlog"]
 
 [node name="LevelManager" type="Node"]
 script = ExtResource("1_g401l")
 mainMenu = ExtResource("2_kwkqk")
 loginScreen = ExtResource("3_swei0")
-userDashboard = ExtResource("3_ryrv5")
+employeeDashboard = ExtResource("4_r20as")
+recommendationPage = ExtResource("5_cydqj")
+managerDashboard = ExtResource("9_wjlog")
+employeeFeedbackForm = ExtResource("7_827wk")
+managerViewFeedbackForm = ExtResource("8_2mo6i")
+managerViewFatigueScores = ExtResource("9_r20as")
 reactionTimeLevels = Array[PackedScene]([ExtResource("5_q834j")])
 memoryLevels = Array[PackedScene]([ExtResource("6_60olj")])
 focusLevels = Array[PackedScene]([ExtResource("7_nqpxu")])
