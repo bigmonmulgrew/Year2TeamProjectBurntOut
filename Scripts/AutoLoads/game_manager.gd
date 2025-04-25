@@ -25,7 +25,7 @@ func take_full_screenshot(path: String = "screenshot.png") -> void:
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	gameNumbers = GAME_NUMBER_LIST
+	gameNumbers = GAME_NUMBER_LIST.duplicate()
 	
 	file_dialog.file_mode = FileDialog.FILE_MODE_SAVE_FILE
 	file_dialog.access = FileDialog.ACCESS_FILESYSTEM
@@ -46,12 +46,15 @@ func _process(delta: float) -> void:
 
 func _pick_random_unique() -> int:
 	if gameNumbers.size() == 0:
-		gameNumbers = GAME_NUMBER_LIST
+		gameNumbers = GAME_NUMBER_LIST.duplicate()
 		return -1
 
-	var index = randi() % gameNumbers.size()
-	var value = gameNumbers[index]
-	gameNumbers.remove_at(index)
+	var value = gameNumbers.pick_random()
+	gameNumbers.erase(value)
+
+	#var index = randi() % gameNumbers.size()
+	#var value = gameNumbers[index]
+	#gameNumbers.remove_at(index)
 	return value
 
 func _load_next_game():
