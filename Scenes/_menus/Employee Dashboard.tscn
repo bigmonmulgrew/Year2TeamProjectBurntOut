@@ -23,14 +23,14 @@ theme_override_font_sizes/italics_font_size = 110
 theme_override_font_sizes/mono_font_size = 110
 theme_override_font_sizes/normal_font_size = 110
 theme_override_font_sizes/bold_font_size = 110
-text = "Name's Dashboard"
+text = "User1s Dashboard"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="History" type="RichTextLabel" parent="."]
-offset_left = 296.0
+offset_left = 298.0
 offset_top = 265.0
-offset_right = 1578.0
+offset_right = 1580.0
 offset_bottom = 455.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
