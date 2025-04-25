@@ -10,6 +10,8 @@ var totalScore: float = 0
 
 var sessionsComplete: int = 0
 
+var admin_mode:bool = false
+
 # to be completed
 func download_chart() -> void:
 	take_full_screenshot()
@@ -82,3 +84,7 @@ func next_level(score: float = 0):
 
 func begin_play():
 	_load_next_game()
+	
+func toggle_admin() -> bool:
+	admin_mode = !admin_mode
+	return admin_mode
