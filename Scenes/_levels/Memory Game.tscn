@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b1ud12qggsyx6"]
 
 [ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_rwugn"]
-[ext_resource type="Script" uid="uid://dnteq8kd4pjuu" path="res://Scripts/memory_game.gd" id="1_tj50c"]
+[ext_resource type="Script" uid="uid://dnteq8kd4pjuu" path="res://Scripts/Minigames/memory_game.gd" id="1_tj50c"]
 [ext_resource type="PackedScene" uid="uid://dgj7v2ms6hiot" path="res://Scenes/Game Objects/Correct Display.tscn" id="2_civ1b"]
 [ext_resource type="Texture2D" uid="uid://xcl382k1jc3d" path="res://Images/Sprites/Button Up Base.png" id="3_15ayj"]
 [ext_resource type="Texture2D" uid="uid://xibwolq6eetw" path="res://Images/Sprites/Button Down Base.png" id="5_xj76r"]

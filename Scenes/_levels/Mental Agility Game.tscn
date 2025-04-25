@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://n4uudl35iix6"]
 
 [ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_vvbnm"]
-[ext_resource type="Script" uid="uid://d01sbfw6y5ijj" path="res://Scenes/_levels/mental_agility_game.gd" id="1_yayg5"]
+[ext_resource type="Script" uid="uid://d01sbfw6y5ijj" path="res://Scripts/Minigames/mental_agility_game.gd" id="1_yayg5"]
 [ext_resource type="Texture2D" uid="uid://cye3ijxvljkkr" path="res://Images/Sprites/Jigsaw 0.png" id="2_dn8gv"]
 [ext_resource type="Texture2D" uid="uid://cqmj2gfh1pgrf" path="res://Images/Sprites/Jigsaw 1.png" id="3_yayg5"]
 [ext_resource type="Texture2D" uid="uid://d2grxpe7hnoel" path="res://Images/Sprites/Jigsaw 2.png" id="4_os5sr"]

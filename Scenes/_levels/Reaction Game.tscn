@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://dju6144cx18sx"]
 
 [ext_resource type="PackedScene" uid="uid://bu0fddx8ifwlc" path="res://Scenes/Game Objects/Game Timer.tscn" id="1_6nyx5"]
-[ext_resource type="Script" uid="uid://dv2km1wn3ocr4" path="res://Scripts/reaction_game.gd" id="1_h5ng6"]
+[ext_resource type="Script" uid="uid://dv2km1wn3ocr4" path="res://Scripts/Minigames/reaction_game.gd" id="1_h5ng6"]
 [ext_resource type="PackedScene" uid="uid://t7xj8pqddmro" path="res://Scenes/Game Objects/Correct Incorrect Display.tscn" id="2_sbvj6"]
+
 
 [node name="ReactionGame" type="Node2D"]
 script = ExtResource("1_h5ng6")

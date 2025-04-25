@@ -63,4 +63,4 @@ func assign_random_answers(question_index: int):
 func _on_answer_pressed(button_index: int) -> void:
 	userScore = current_answer_scores[button_index]
 	var selected_text = answer_buttons[button_index].text
-	win_game()
+	end_game()

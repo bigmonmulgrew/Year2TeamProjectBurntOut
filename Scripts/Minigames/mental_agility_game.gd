@@ -77,7 +77,7 @@ func _validate_grid() -> void:
 	if _compare_texture_arrays(current_grid, validation_textures):
 		print("Win")
 		userScore = _calculate_score()
-		win_game()
+		end_game()
 	else:
 		print("Not there yet")
 

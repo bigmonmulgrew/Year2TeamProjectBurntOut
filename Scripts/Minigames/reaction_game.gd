@@ -54,7 +54,7 @@ func _on_CentreCardButton_pressed() -> void:
 			pick_new_current_card()
 		else:
 			userScore = _calculate_score()
-			win_game()
+			end_game()
 	else:
 		incorrect_score += 1
 		incorrect_label.text = str(incorrect_score)
