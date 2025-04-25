@@ -1,35 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://wpfydvfdb2pw"]
+[gd_scene load_steps=4 format=3 uid="uid://wpfydvfdb2pw"]
 
-[ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="1_6mc7s"]
-[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_kd56c"]
+[ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="1_itnvm"]
+[ext_resource type="Script" uid="uid://dxgqt5hwu7k7w" path="res://Scripts/manager_view_fatigue_scores.gd" id="1_n07hj"]
+[ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="2_n07hj"]
 
 [node name="EmployeeDashboard" type="Node2D"]
-
-[node name="Name Title" type="RichTextLabel" parent="."]
-offset_left = 296.0
-offset_top = 74.0
-offset_right = 1578.0
-offset_bottom = 264.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
-theme_override_constants/outline_size = 15
-theme_override_constants/shadow_offset_y = 8
-theme_override_constants/shadow_offset_x = 8
-theme_override_constants/shadow_outline_size = 0
-theme_override_font_sizes/bold_italics_font_size = 110
-theme_override_font_sizes/italics_font_size = 110
-theme_override_font_sizes/mono_font_size = 110
-theme_override_font_sizes/normal_font_size = 110
-theme_override_font_sizes/bold_font_size = 110
-text = "Name's Dashboard"
-horizontal_alignment = 1
-vertical_alignment = 1
+script = ExtResource("1_n07hj")
 
 [node name="History" type="RichTextLabel" parent="."]
 offset_left = 296.0
-offset_top = 265.0
+offset_top = 41.0
 offset_right = 1578.0
-offset_bottom = 455.0
+offset_bottom = 231.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -41,15 +23,15 @@ theme_override_font_sizes/italics_font_size = 110
 theme_override_font_sizes/mono_font_size = 110
 theme_override_font_sizes/normal_font_size = 110
 theme_override_font_sizes/bold_font_size = 110
-text = "Fatigue Score History"
+text = "Fatigue Score Averages"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Recent" type="RichTextLabel" parent="."]
 offset_left = 230.0
-offset_top = 508.0
+offset_top = 332.0
 offset_right = 489.0
-offset_bottom = 620.0
+offset_bottom = 444.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -67,9 +49,9 @@ vertical_alignment = 1
 
 [node name="Older" type="RichTextLabel" parent="."]
 offset_left = 1432.0
-offset_top = 508.0
+offset_top = 332.0
 offset_right = 1691.0
-offset_bottom = 620.0
+offset_bottom = 444.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -86,30 +68,30 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Arrow" type="Sprite2D" parent="."]
-position = Vector2(959.45, 564)
+position = Vector2(959.45, 388)
 rotation = 1.5708
 scale = Vector2(1, 2.69942)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line2" type="Sprite2D" parent="Arrow"]
 position = Vector2(-17.6646, -165.035)
 rotation = -2.78682
 scale = Vector2(0.754067, 0.149956)
 skew = 0.861245
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line3" type="Sprite2D" parent="Arrow"]
 position = Vector2(20.3352, -165.035)
 rotation = 2.78682
 scale = Vector2(0.754067, 0.149956)
 skew = -0.861245
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Score 0" type="RichTextLabel" parent="."]
 offset_left = 157.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 519.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -121,15 +103,15 @@ theme_override_font_sizes/italics_font_size = 225
 theme_override_font_sizes/mono_font_size = 225
 theme_override_font_sizes/normal_font_size = 225
 theme_override_font_sizes/bold_font_size = 225
-text = "24"
+text = "30"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 1" type="RichTextLabel" parent="."]
 offset_left = 481.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 736.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -141,15 +123,15 @@ theme_override_font_sizes/italics_font_size = 175
 theme_override_font_sizes/mono_font_size = 175
 theme_override_font_sizes/normal_font_size = 175
 theme_override_font_sizes/bold_font_size = 175
-text = "32"
+text = "18"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 2" type="RichTextLabel" parent="."]
 offset_left = 712.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 976.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -161,15 +143,15 @@ theme_override_font_sizes/italics_font_size = 175
 theme_override_font_sizes/mono_font_size = 175
 theme_override_font_sizes/normal_font_size = 175
 theme_override_font_sizes/bold_font_size = 175
-text = "16"
+text = "12"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 3" type="RichTextLabel" parent="."]
 offset_left = 952.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 1216.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -181,15 +163,15 @@ theme_override_font_sizes/italics_font_size = 175
 theme_override_font_sizes/mono_font_size = 175
 theme_override_font_sizes/normal_font_size = 175
 theme_override_font_sizes/bold_font_size = 175
-text = "4"
+text = "22"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 4" type="RichTextLabel" parent="."]
 offset_left = 1200.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 1390.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -201,15 +183,15 @@ theme_override_font_sizes/italics_font_size = 125
 theme_override_font_sizes/mono_font_size = 125
 theme_override_font_sizes/normal_font_size = 125
 theme_override_font_sizes/bold_font_size = 125
-text = "44"
+text = "23"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 5" type="RichTextLabel" parent="."]
 offset_left = 1379.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 1571.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -221,15 +203,15 @@ theme_override_font_sizes/italics_font_size = 125
 theme_override_font_sizes/mono_font_size = 125
 theme_override_font_sizes/normal_font_size = 125
 theme_override_font_sizes/bold_font_size = 125
-text = "48"
+text = "28"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score 6" type="RichTextLabel" parent="."]
 offset_left = 1551.0
-offset_top = 611.0
+offset_top = 435.0
 offset_right = 1745.0
-offset_bottom = 923.0
+offset_bottom = 747.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.196078)
 theme_override_constants/outline_size = 15
@@ -241,95 +223,77 @@ theme_override_font_sizes/italics_font_size = 125
 theme_override_font_sizes/mono_font_size = 125
 theme_override_font_sizes/normal_font_size = 125
 theme_override_font_sizes/bold_font_size = 125
-text = "12"
+text = "32"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Line" type="Sprite2D" parent="."]
-position = Vector2(492.25, 773.75)
+position = Vector2(492.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line2" type="Sprite2D" parent="."]
-position = Vector2(729.25, 773.75)
+position = Vector2(729.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line3" type="Sprite2D" parent="."]
-position = Vector2(968.25, 773.75)
+position = Vector2(968.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line4" type="Sprite2D" parent="."]
-position = Vector2(1205.25, 773.75)
+position = Vector2(1205.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line5" type="Sprite2D" parent="."]
-position = Vector2(1387.25, 773.75)
+position = Vector2(1387.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
 [node name="Line6" type="Sprite2D" parent="."]
-position = Vector2(1563.25, 773.75)
+position = Vector2(1563.25, 597.75)
 scale = Vector2(0.633333, 0.688406)
-texture = ExtResource("1_6mc7s")
+texture = ExtResource("1_itnvm")
 
-[node name="Menu" type="Button" parent="."]
+[node name="Back" type="Button" parent="."]
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 361.0
+offset_left = 601.0
 offset_top = 934.0
-offset_right = 634.0
+offset_right = 874.0
 offset_bottom = 1035.0
 grow_horizontal = 0
 grow_vertical = 2
-theme = ExtResource("2_kd56c")
+theme = ExtResource("2_n07hj")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
-text = "Menu"
+text = "Back"
 
-[node name="Feeback Form" type="Button" parent="."]
+[node name="Download" type="Button" parent="."]
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 833.0
-offset_top = 925.5
-offset_right = 1106.0
-offset_bottom = 1043.5
+offset_left = 1073.0
+offset_top = 926.0
+offset_right = 1346.0
+offset_bottom = 1039.0
 grow_horizontal = 0
 grow_vertical = 2
-theme = ExtResource("2_kd56c")
+theme = ExtResource("2_n07hj")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
-text = "Feedback
-Form"
+text = "Download"
 
-[node name="View Fatigue Scores" type="Button" parent="."]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = 1251.0
-offset_top = 935.0
-offset_right = 1524.0
-offset_bottom = 1036.0
-grow_horizontal = 0
-grow_vertical = 2
-theme = ExtResource("2_kd56c")
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 0
-theme_override_font_sizes/font_size = 40
-text = "View Fatigue
-Scores"
+[connection signal="button_down" from="Back" to="." method="_on_back_button_down"]
+[connection signal="button_down" from="Download" to="." method="_on_download_button_down"]

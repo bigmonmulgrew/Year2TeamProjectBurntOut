@@ -9,7 +9,7 @@ func _on_start_button_button_down() -> void:
 
 
 func _on_dashboard_button_button_down() -> void:
-	push_error("Dashboard not yet implemented!")
+	LevelManager.load_dashboard()
 
 
 func _on_exit_button_button_down() -> void:
