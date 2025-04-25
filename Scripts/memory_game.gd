@@ -87,4 +87,4 @@ func check_game_over():
 
 func finish_memory_game(won: bool):
 	input_enabled = false
-	end_game() # CURRENTLY CAUSES ERROR - to be sorted in future merge
+	#end_game() # CURRENTLY CAUSES ERROR - to be sorted in future merge
