@@ -11,6 +11,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j50xq")
+use_colour = Color(0.206894, 0.325589, 0.317412, 1)
+admin_colour = Color(0.521457, 0.346159, 0.343717, 1)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -39,6 +41,27 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
 text = "Begin Test
+"
+
+[node name="Toggle Admin" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1898.0
+offset_top = -508.0
+offset_right = -1625.0
+offset_bottom = -407.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("1_b6tf0")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 40
+text = "Toggle Admin
 "
 
 [node name="DashboardButton" type="Button" parent="."]
@@ -147,5 +170,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]
+[connection signal="button_down" from="Toggle Admin" to="." method="_on_toggle_admin_button_down"]
 [connection signal="button_down" from="DashboardButton" to="." method="_on_dashboard_button_button_down"]
 [connection signal="button_down" from="ExitButton" to="." method="_on_exit_button_button_down"]
