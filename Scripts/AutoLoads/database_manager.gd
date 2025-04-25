@@ -50,6 +50,8 @@ func get_fatigue_history(isManager: bool = false) -> Array[int]:
 		randi() % 51,
 		randi() % 51,
 		randi() % 51,
+		randi() % 51,
+		randi() % 51,
 		randi() % 51
 	]
 	
@@ -57,6 +59,8 @@ func get_feedback_history() -> Array[float]:
 	print("Using canned data for debugging.")
 	
 	return [
+		randf() * 4 + 1,
+		randf() * 4 + 1,
 		randf() * 4 + 1,
 		randf() * 4 + 1,
 		randf() * 4 + 1,
