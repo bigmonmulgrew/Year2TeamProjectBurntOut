@@ -57,9 +57,9 @@ func get_feedback_history() -> Array[float]:
 	print("Using canned data for debugging.")
 	
 	return [
-		randf() * 5,
-		randf() * 5,
-		randf() * 5,
-		randf() * 5,
-		randf() * 5
+		randf() * 4 + 1,
+		randf() * 4 + 1,
+		randf() * 4 + 1,
+		randf() * 4 + 1,
+		randf() * 4 + 1
 	]
