@@ -1,4 +1,5 @@
 extends Timer
+signal timer_finished
 
 @export var time_duration : int = 120 # Time for minigames
 var time_remaining : int
@@ -27,4 +28,4 @@ func _on_timeout() -> void:
 		_on_time_end()
 		
 func _on_time_end() -> void:
-	pass #TODO: implement function to send signal to end level
+	emit_signal("timer_finished")
