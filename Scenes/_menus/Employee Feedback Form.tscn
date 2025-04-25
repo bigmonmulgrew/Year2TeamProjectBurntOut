@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqhb3etbp7jpy"]
+[gd_scene load_steps=8 format=3 uid="uid://cqhb3etbp7jpy"]
 
 [ext_resource type="Script" uid="uid://wqw7n1i8aq1a" path="res://Scripts/employee_feedback_form.gd" id="1_jhdk2"]
 [ext_resource type="Texture2D" uid="uid://dunh4s88ls6p1" path="res://Images/UI/UI Circle Super Long.png" id="1_x064s"]
 [ext_resource type="Texture2D" uid="uid://de07efgtdygod" path="res://Images/Sprites/Line.png" id="2_jhdk2"]
 [ext_resource type="Theme" uid="uid://blvc1yhr34mqf" path="res://Themes/Button.tres" id="3_8racg"]
+[ext_resource type="Script" uid="uid://c7sp6imkkv6o5" path="res://Scripts/Question.gd" id="4_57cts"]
+[ext_resource type="Texture2D" uid="uid://cqo0qxqewvt53" path="res://Images/UI/pngegg.png" id="5_7c6as"]
+[ext_resource type="Texture2D" uid="uid://b6vfu2xbj8l7e" path="res://Images/UI/pngegg selected.png" id="6_npvxu"]
 
 [node name="EmployeeFeedbackForm" type="Node2D"]
 script = ExtResource("1_jhdk2")
@@ -116,13 +119,14 @@ Agree"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Question 1" type="Sprite2D" parent="."]
+[node name="Question1" type="Sprite2D" parent="."]
 position = Vector2(962.919, 362)
 rotation = 1.5708
 scale = Vector2(0.966, 5)
 texture = ExtResource("2_jhdk2")
+script = ExtResource("4_57cts")
 
-[node name="Question" type="RichTextLabel" parent="Question 1"]
+[node name="Question" type="RichTextLabel" parent="Question1"]
 offset_left = -113.0
 offset_top = 184.0
 offset_right = 691.0
@@ -140,57 +144,78 @@ theme_override_font_sizes/italics_font_size = 30
 theme_override_font_sizes/mono_font_size = 30
 theme_override_font_sizes/normal_font_size = 30
 theme_override_font_sizes/bold_font_size = 30
-text = "I find it diffucult to stay focused on tasks today."
+text = "I find it difficult to stay focused on tasks today."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Strongly Disagree" type="Button" parent="Question 1"]
-offset_left = -96.8427
-offset_top = 7.74976
-offset_right = -26.8427
-offset_bottom = 77.7498
+[node name="StronglyDisagree" type="TextureButton" parent="Question1"]
+offset_left = -104.555
+offset_top = 5.58387
+offset_right = -6.55475
+offset_bottom = 97.5839
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Disagree" type="Button" parent="Question 1"]
-offset_left = -96.8426
-offset_top = -36.2502
-offset_right = -26.8426
-offset_bottom = 33.7498
+[node name="Disagree" type="TextureButton" parent="Question1"]
+offset_left = -106.626
+offset_top = -37.2161
+offset_right = -8.62595
+offset_bottom = 54.7839
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Neither Agree or Disagree" type="Button" parent="Question 1"]
-offset_left = -96.8426
-offset_top = -79.2502
-offset_right = -26.8426
-offset_bottom = -9.25024
+[node name="NeitherAgreeOrDisagree" type="TextureButton" parent="Question1"]
+offset_left = -108.697
+offset_top = -81.2161
+offset_right = -10.6972
+offset_bottom = 10.7839
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Agree" type="Button" parent="Question 1"]
-offset_left = -96.8428
-offset_top = -122.25
-offset_right = -26.8428
-offset_bottom = -52.2502
+[node name="Agree" type="TextureButton" parent="Question1"]
+offset_left = -109.526
+offset_top = -122.616
+offset_right = -11.5261
+offset_bottom = -30.6161
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Strongly Agree" type="Button" parent="Question 1"]
-offset_left = -96.8428
-offset_top = -165.25
-offset_right = -26.8428
-offset_bottom = -95.2502
+[node name="StronglyAgree" type="TextureButton" parent="Question1"]
+offset_left = -107.664
+offset_top = -164.016
+offset_right = -9.66352
+offset_bottom = -72.0161
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Question 2" type="Sprite2D" parent="."]
+[node name="Question2" type="Sprite2D" parent="."]
 position = Vector2(962.919, 482)
 rotation = 1.5708
 scale = Vector2(0.966, 5)
 texture = ExtResource("2_jhdk2")
+script = ExtResource("4_57cts")
 
-[node name="Question" type="RichTextLabel" parent="Question 2"]
+[node name="Question" type="RichTextLabel" parent="Question2"]
 offset_left = -113.0
 offset_top = 184.0
 offset_right = 691.0
@@ -212,53 +237,74 @@ text = "I notice my reactions are slower than normal."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Strongly Disagree" type="Button" parent="Question 2"]
-offset_left = -96.8427
-offset_top = 7.74976
-offset_right = -26.8427
-offset_bottom = 77.7498
+[node name="StronglyDisagree" type="TextureButton" parent="Question2"]
+offset_left = -110.973
+offset_top = 6.7838
+offset_right = -12.9727
+offset_bottom = 98.7838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Disagree" type="Button" parent="Question 2"]
-offset_left = -96.8426
-offset_top = -36.2502
-offset_right = -26.8426
-offset_bottom = 33.7498
+[node name="Disagree" type="TextureButton" parent="Question2"]
+offset_left = -113.044
+offset_top = -36.0162
+offset_right = -15.0438
+offset_bottom = 55.9838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Neither Agree or Disagree" type="Button" parent="Question 2"]
-offset_left = -96.8426
-offset_top = -79.2502
-offset_right = -26.8426
-offset_bottom = -9.25024
+[node name="NeitherAgreeOrDisagree" type="TextureButton" parent="Question2"]
+offset_left = -115.115
+offset_top = -80.0162
+offset_right = -17.1151
+offset_bottom = 11.9838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Agree" type="Button" parent="Question 2"]
-offset_left = -96.8428
-offset_top = -122.25
-offset_right = -26.8428
-offset_bottom = -52.2502
+[node name="Agree" type="TextureButton" parent="Question2"]
+offset_left = -115.944
+offset_top = -121.416
+offset_right = -17.944
+offset_bottom = -29.4162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Strongly Agree" type="Button" parent="Question 2"]
-offset_left = -96.8428
-offset_top = -165.25
-offset_right = -26.8428
-offset_bottom = -95.2502
+[node name="StronglyAgree" type="TextureButton" parent="Question2"]
+offset_left = -114.081
+offset_top = -162.816
+offset_right = -16.0814
+offset_bottom = -70.8162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Question 3" type="Sprite2D" parent="."]
+[node name="Question3" type="Sprite2D" parent="."]
 position = Vector2(962.919, 602)
 rotation = 1.5708
 scale = Vector2(0.966, 5)
 texture = ExtResource("2_jhdk2")
+script = ExtResource("4_57cts")
 
-[node name="Question" type="RichTextLabel" parent="Question 3"]
+[node name="Question" type="RichTextLabel" parent="Question3"]
 offset_left = -113.0
 offset_top = 184.0
 offset_right = 691.0
@@ -280,53 +326,74 @@ text = "I make more mistakes than usual when working or solving problems."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Strongly Disagree" type="Button" parent="Question 3"]
-offset_left = -96.8427
-offset_top = 7.74976
-offset_right = -26.8427
-offset_bottom = 77.7498
+[node name="StronglyDisagree" type="TextureButton" parent="Question3"]
+offset_left = -101.656
+offset_top = 7.18381
+offset_right = -3.65588
+offset_bottom = 99.1838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Disagree" type="Button" parent="Question 3"]
-offset_left = -96.8426
-offset_top = -36.2502
-offset_right = -26.8426
-offset_bottom = 33.7498
+[node name="Disagree" type="TextureButton" parent="Question3"]
+offset_left = -103.727
+offset_top = -35.6162
+offset_right = -5.72711
+offset_bottom = 56.3838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Neither Agree or Disagree" type="Button" parent="Question 3"]
-offset_left = -96.8426
-offset_top = -79.2502
-offset_right = -26.8426
-offset_bottom = -9.25024
+[node name="NeitherAgreeOrDisagree" type="TextureButton" parent="Question3"]
+offset_left = -105.798
+offset_top = -79.6162
+offset_right = -7.79834
+offset_bottom = 12.3838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Agree" type="Button" parent="Question 3"]
-offset_left = -96.8428
-offset_top = -122.25
-offset_right = -26.8428
-offset_bottom = -52.2502
+[node name="Agree" type="TextureButton" parent="Question3"]
+offset_left = -106.627
+offset_top = -121.016
+offset_right = -8.6272
+offset_bottom = -29.0162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Strongly Agree" type="Button" parent="Question 3"]
-offset_left = -96.8428
-offset_top = -165.25
-offset_right = -26.8428
-offset_bottom = -95.2502
+[node name="StronglyAgree" type="TextureButton" parent="Question3"]
+offset_left = -104.765
+offset_top = -162.416
+offset_right = -6.76465
+offset_bottom = -70.4162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Question 4" type="Sprite2D" parent="."]
+[node name="Question4" type="Sprite2D" parent="."]
 position = Vector2(962.919, 722)
 rotation = 1.5708
 scale = Vector2(0.966, 5)
 texture = ExtResource("2_jhdk2")
+script = ExtResource("4_57cts")
 
-[node name="Question" type="RichTextLabel" parent="Question 4"]
+[node name="Question" type="RichTextLabel" parent="Question4"]
 offset_left = -113.0
 offset_top = 184.0
 offset_right = 691.0
@@ -348,53 +415,74 @@ text = "I feel fatigued even after resting or taking breaks."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Strongly Disagree" type="Button" parent="Question 4"]
-offset_left = -96.8427
-offset_top = 7.74976
-offset_right = -26.8427
-offset_bottom = 77.7498
+[node name="StronglyDisagree" type="TextureButton" parent="Question4"]
+offset_left = -107.867
+offset_top = 6.3838
+offset_right = -9.86707
+offset_bottom = 98.3838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Disagree" type="Button" parent="Question 4"]
-offset_left = -96.8426
-offset_top = -36.2502
-offset_right = -26.8426
-offset_bottom = 33.7498
+[node name="Disagree" type="TextureButton" parent="Question4"]
+offset_left = -109.938
+offset_top = -36.4162
+offset_right = -11.9382
+offset_bottom = 55.5838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Neither Agree or Disagree" type="Button" parent="Question 4"]
-offset_left = -96.8426
-offset_top = -79.2502
-offset_right = -26.8426
-offset_bottom = -9.25024
+[node name="NeitherAgreeOrDisagree" type="TextureButton" parent="Question4"]
+offset_left = -112.01
+offset_top = -80.4162
+offset_right = -14.0095
+offset_bottom = 11.5838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Agree" type="Button" parent="Question 4"]
-offset_left = -96.8428
-offset_top = -122.25
-offset_right = -26.8428
-offset_bottom = -52.2502
+[node name="Agree" type="TextureButton" parent="Question4"]
+offset_left = -112.838
+offset_top = -121.816
+offset_right = -14.8384
+offset_bottom = -29.8162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Strongly Agree" type="Button" parent="Question 4"]
-offset_left = -96.8428
-offset_top = -165.25
-offset_right = -26.8428
-offset_bottom = -95.2502
+[node name="StronglyAgree" type="TextureButton" parent="Question4"]
+offset_left = -110.976
+offset_top = -163.216
+offset_right = -12.9758
+offset_bottom = -71.2162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Question 5" type="Sprite2D" parent="."]
+[node name="Question5" type="Sprite2D" parent="."]
 position = Vector2(962.919, 842)
 rotation = 1.5708
 scale = Vector2(0.966, 5)
 texture = ExtResource("2_jhdk2")
+script = ExtResource("4_57cts")
 
-[node name="Question" type="RichTextLabel" parent="Question 5"]
+[node name="Question" type="RichTextLabel" parent="Question5"]
 offset_left = -113.0
 offset_top = 184.0
 offset_right = 691.0
@@ -416,45 +504,65 @@ text = "I believe my current fatigue level may impact my performance today."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Strongly Disagree" type="Button" parent="Question 5"]
-offset_left = -96.8427
-offset_top = 7.74976
-offset_right = -26.8427
-offset_bottom = 77.7498
+[node name="StronglyDisagree" type="TextureButton" parent="Question5"]
+offset_left = -105.797
+offset_top = 5.18381
+offset_right = -7.79669
+offset_bottom = 97.1838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Disagree" type="Button" parent="Question 5"]
-offset_left = -96.8426
-offset_top = -36.2502
-offset_right = -26.8426
-offset_bottom = 33.7498
+[node name="Disagree" type="TextureButton" parent="Question5"]
+offset_left = -107.868
+offset_top = -37.6162
+offset_right = -9.86792
+offset_bottom = 54.3838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Neither Agree or Disagree" type="Button" parent="Question 5"]
-offset_left = -96.8426
-offset_top = -79.2502
-offset_right = -26.8426
-offset_bottom = -9.25024
+[node name="NeitherAgreeOrDisagree" type="TextureButton" parent="Question5"]
+offset_left = -109.939
+offset_top = -81.6162
+offset_right = -11.9391
+offset_bottom = 10.3838
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Agree" type="Button" parent="Question 5"]
-offset_left = -96.8428
-offset_top = -122.25
-offset_right = -26.8428
-offset_bottom = -52.2502
+[node name="Agree" type="TextureButton" parent="Question5"]
+offset_left = -110.768
+offset_top = -123.016
+offset_right = -12.7679
+offset_bottom = -31.0162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Strongly Agree" type="Button" parent="Question 5"]
-offset_left = -96.8428
-offset_top = -165.25
-offset_right = -26.8428
-offset_bottom = -95.2502
+[node name="StronglyAgree" type="TextureButton" parent="Question5"]
+offset_left = -108.905
+offset_top = -164.416
+offset_right = -10.9055
+offset_bottom = -72.4162
 scale = Vector2(1, 0.2)
 toggle_mode = true
+texture_normal = ExtResource("5_7c6as")
+texture_pressed = ExtResource("6_npvxu")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Back" type="Button" parent="."]
 anchors_preset = 6
