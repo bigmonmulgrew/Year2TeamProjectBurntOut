@@ -74,6 +74,7 @@ func _load_next_game() -> void:
 			LevelManager.load_main_menu()
 	
 func next_level(score: float = 0) -> void:
+	print("Loading new game from scene: " + get_tree().current_scene.name)
 	# Call with "GameManager.next_level()"
 	totalScore += score
 	_load_next_game()
