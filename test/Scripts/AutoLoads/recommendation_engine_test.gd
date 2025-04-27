@@ -7,7 +7,6 @@ extends GdUnitTestSuite
 # TestSuite generated from
 const __source = 'res://Scripts/AutoLoads/recommendation_engine.gd'
 
-
 func test_give_recommendation() -> void:
 	# remove this line and complete your test
 	
