@@ -83,3 +83,7 @@ func _calculate_score() -> int:
 
 func _on_centre_card_timer_timeout() -> void:
 	show_random_centre_card()
+
+
+func _on_game_timer_timer_finished() -> void:
+	end_game()
