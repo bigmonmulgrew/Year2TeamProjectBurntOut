@@ -46,12 +46,10 @@ scale = Vector2(1.6, 1.6)
 texture = ExtResource("3_fvrbh")
 
 [node name="Incorrect Area" type="Area2D" parent="SpotTheDifference1"]
-scale = Vector2(1, 1)
 script = ExtResource("5_3h05u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpotTheDifference1/Incorrect Area"]
 position = Vector2(-0.625, 0.15625)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_2s5sh")
 debug_color = Color(0.867996, 0.353149, 7.70092e-07, 0.42)
 
@@ -75,7 +73,6 @@ position = Vector2(43.125, -44.375)
 
 [node name="DifferenceSpot7" parent="SpotTheDifference1" instance=ExtResource("6_3h05u")]
 position = Vector2(-116.25, 65.625)
-scale = Vector2(1, 1)
 
 [node name="SpotTheDifference2" type="Sprite2D" parent="."]
 position = Vector2(1423, 656)
@@ -83,11 +80,9 @@ scale = Vector2(1.6, 1.6)
 texture = ExtResource("4_a8ose")
 
 [node name="Incorrect Area" type="Area2D" parent="SpotTheDifference2"]
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpotTheDifference2/Incorrect Area"]
 position = Vector2(-0.625, 0.15625)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_2s5sh")
 debug_color = Color(0.867996, 0.353149, 7.70092e-07, 0.42)
 
@@ -111,7 +106,6 @@ position = Vector2(43.125, -44.375)
 
 [node name="DifferenceSpot7" parent="SpotTheDifference2" instance=ExtResource("6_3h05u")]
 position = Vector2(-116.25, 65.625)
-scale = Vector2(1, 1)
 
 [connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timeout"]
 
