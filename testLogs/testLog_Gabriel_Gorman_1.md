@@ -34,8 +34,8 @@ This document tracks the testing of core features, including user roles, dashboa
 | Reaction Mini-Game | Player can react correctly to target icons | Correct taps recorded, incorrect taps penalized, 2-minute timeout works | ✅ |
 | Mental Agility Mini-Game | 3x3 tile puzzle can be solved | Puzzle can be completed, or timeout ends session after 2 minutes | ✅ |
 | Decision Making Mini-Game | Question and answers function | Player can pick one answer and proceed immediately, timeout fallback | ⚠ | timer doesnt work
-| Memory Mini-Game | Simon-says sequence can be repeated | Sequence grows correctly, win/lose conditions detected properly | ✅ |
-| Game Loop End | After all 5 mini-games, return to main menu | No crashes, menu loads automatically after loop | ⚠ | timer doesnt work
+| Memory Mini-Game | Simon-says sequence can be repeated | Sequence grows correctly, win/lose conditions detected properly | ⚠ | timer doesnt work
+| Game Loop End | After all 5 mini-games, return to main menu | No crashes, menu loads automatically after loop | ⚠️ | game loop ends after four games
 | UI & Menus | Menus function between and after games | Smooth navigation between mini-games, feedback form, dashboards | ✅ |
 | Feedback Submission | Can submit feedback after the game session | Feedback form captures and stores all inputs | ✅  |
 | Management Feedback View | Manager can view and filter feedback | Feedbacks are displayed anonymized and categorized correctly | ✅  |
