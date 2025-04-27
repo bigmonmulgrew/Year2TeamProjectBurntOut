@@ -126,6 +126,7 @@ theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 40
 text = "A City"
 
+[connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timer_finished"]
 [connection signal="pressed" from="Answer 1" to="." method="_on_answer_pressed"]
 [connection signal="pressed" from="Answer 2" to="." method="_on_answer_pressed"]
 [connection signal="pressed" from="Answer 3" to="." method="_on_answer_pressed"]

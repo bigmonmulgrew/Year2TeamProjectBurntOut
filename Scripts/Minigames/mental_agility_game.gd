@@ -103,3 +103,7 @@ func _compare_texture_arrays(a: Array, b: Array) -> bool:
 			return false
 			
 	return true
+
+
+func _on_game_timer_timer_finished() -> void:
+	print("Timer expired, user score will be penalised")
