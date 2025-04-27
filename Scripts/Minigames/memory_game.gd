@@ -36,10 +36,10 @@ func _ready() -> void:
 func start_new_round(length: int) -> void:
 	current_sequence_length = length
 	input_enabled = false
-	user_input.clear()
+	user_input.clear() # test
 	sequence.clear()
 	for i in range(length):
-		sequence.append(color_names[randi() % color_names.size()])
+		sequence.append(color_names[randi() % color_names.size()]) # test
 	show_sequence()
 
 func show_sequence() -> void:

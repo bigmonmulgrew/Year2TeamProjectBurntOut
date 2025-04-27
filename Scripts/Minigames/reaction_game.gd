@@ -31,6 +31,7 @@ var current_card: String = ""
 var centre_card_value: String = ""
 var correct_score: int = 0
 var incorrect_score: int = 0
+var random_value: int = -1
 
 func _ready() -> void:
 	timer.wait_time = cycle_timer
@@ -40,7 +41,9 @@ func _ready() -> void:
 	#randomize()
 	
 func pick_new_current_card() -> void:
-	current_card = cards[randi() % cards.size()]
+	random_value = randi() % cards.size()
+	current_card = ""
+	current_card = cards[random_value]
 	current_card_sprite.texture = card_textures[current_card]
 
 func show_random_centre_card() -> void:
