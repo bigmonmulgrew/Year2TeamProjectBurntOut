@@ -19,10 +19,13 @@ func authenticate() -> bool:
 		# TODO implement UI feedback here and progress to dashboard
 
 func authenticate_with_thumb(thumbHash: String) -> bool:
+	username = ""
+	passwordHash = ""
 	if(thumbHash == "XXXXXXDEBUGXXXXXX"):
 		username = "User1"
 		passwordHash = "5f4dcc3b5aa765d61d8327deb882cf99"
 		return authenticate()
 	else:
+		
 		push_error("Fetching username from thumb not currently implemented")
 		return authenticate()

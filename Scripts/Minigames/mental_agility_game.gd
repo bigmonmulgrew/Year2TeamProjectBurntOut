@@ -16,7 +16,7 @@ var moves:int = 0
 func _ready() -> void:
 	_shuffle_images()
 		
-func _shuffle_images():
+func _shuffle_images() -> void:
 	# Clear and collect textures
 	image_textures.clear()
 	for sprite in image_sprites:

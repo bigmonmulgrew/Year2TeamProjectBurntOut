@@ -43,7 +43,6 @@ func _input(event: InputEvent) -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
 	pass
 
 func _pick_random_unique() -> int:
@@ -54,13 +53,9 @@ func _pick_random_unique() -> int:
 	var value = gameNumbers.pick_random()
 	gameNumbers.erase(value)
 
-	#var index = randi() % gameNumbers.size()
-	#var value = gameNumbers[index]
-	#gameNumbers.remove_at(index)
 	return value
 
-func _load_next_game():
-	
+func _load_next_game() -> void:
 	sessionsComplete += 1
 	var gameType = _pick_random_unique()
 	match gameType:
@@ -77,12 +72,12 @@ func _load_next_game():
 		-1:
 			LevelManager.load_main_menu()
 	
-func next_level(score: float = 0):
+func next_level(score: float = 0) -> void:
 	# Call with "GameManager.next_level()"
 	totalScore += score
 	_load_next_game()
 
-func begin_play():
+func begin_play() -> void:
 	_load_next_game()
 	
 func toggle_admin() -> bool:
