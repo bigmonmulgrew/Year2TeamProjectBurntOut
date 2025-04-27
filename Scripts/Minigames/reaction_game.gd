@@ -66,7 +66,7 @@ func _calculate_score() -> int:
 	var score: int = 0
 	
 	var timerScore: float = 0 
-	if timer.time_remaining <= 0:
+	if timer.time_left <= 0:
 		timerScore = TIMER_SCORE_VALUE
 	
 	score = correct_score * CORRECT_SCORE_VALUE \
