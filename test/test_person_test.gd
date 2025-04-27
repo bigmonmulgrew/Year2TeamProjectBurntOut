@@ -7,7 +7,6 @@ extends GdUnitTestSuite
 # TestSuite generated from
 const __source = 'res://Scripts/test_person.gd'
 
-
 func test_full_name() -> void:
 	# remove this line and complete your test
 	# assert_not_yet_implemented() # Example code defined by default

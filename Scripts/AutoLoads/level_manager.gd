@@ -28,9 +28,10 @@ func load_level(level) -> void:
 
 func _deferred_load_level(level):
 	# Safety check since current_scene will be null on start
+	
 	if current_scene:
-		current_scene.free()
-		
+		current_scene.queue_free()
+	
 	var scene_to_instance: PackedScene
 	
 	if typeof(level) == TYPE_STRING:
