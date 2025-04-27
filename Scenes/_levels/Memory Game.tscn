@@ -73,6 +73,7 @@ vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 
+[connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timer_finished"]
 [connection signal="pressed" from="RedButtonUpBase" to="." method="_on_button_pressed" binds= ["red"]]
 [connection signal="pressed" from="GreenButtonUpBase" to="." method="_on_button_pressed" binds= ["green"]]
 [connection signal="pressed" from="YellowButtonUpBase" to="." method="_on_button_pressed" binds= ["yellow"]]

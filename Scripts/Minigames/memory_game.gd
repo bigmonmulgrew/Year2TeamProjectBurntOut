@@ -87,4 +87,8 @@ func check_game_over():
 
 func finish_memory_game(won: bool):
 	input_enabled = false
-	end_game() # CURRENTLY CAUSES ERROR - to be sorted in future merge
+	end_game()
+
+
+func _on_game_timer_timer_finished() -> void:
+	finish_memory_game(false)

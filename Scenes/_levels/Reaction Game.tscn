@@ -86,5 +86,6 @@ vertical_alignment = 1
 
 [node name="CentreCardTimer" type="Timer" parent="."]
 
+[connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timer_finished"]
 [connection signal="pressed" from="CentreCard" to="." method="_on_CentreCardButton_pressed"]
 [connection signal="timeout" from="CentreCardTimer" to="." method="_on_centre_card_timer_timeout"]
