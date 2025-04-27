@@ -1,4 +1,81 @@
 
+<a name="v0.1.1"></a>
+## [v0.1.1](https://github.com/bigmonmulgrew/Year2-Overscoped/compare/v0.1.0...v0.1.1)
+
+> 2025-04-27
+
+### Added
+
+* added timout debug message to mental agility game - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+* added timout - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+* added changelog - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+
+
+### Completed
+
+* completed aceptance test - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+
+
+### Create
+
+* Create testLog_acceptance_David_Mulgrew_2.md - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+* Create testLog_Gabriel_Gorman_2.md - 2025-04-27 (by [BartholomewGG](https://www.gravatar.com/avatar/Bartholomew.G.G@Gmail.com?d=identicon))
+
+
+### Created
+
+* Created testlog2_Hayden_Hefford - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+
+
+### Hayden
+
+* Hayden Testlog 1 - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+
+
+### Memory
+
+* Memory game now times out - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+
+
+### Merge
+
+* Merge branch 'main' of https://github.com/bigmonmulgrew/Year2TeamProjectBurntOut - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+* Merge branch 'main' of https://github.com/bigmonmulgrew/Year2TeamProjectBurntOut - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+* Merge branch 'main' of https://github.com/bigmonmulgrew/Year2TeamProjectBurntOut - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+
+
+### Reaction
+
+* Reaction Time Game timeout added - 2025-04-27 (by [MutantGinga](https://www.gravatar.com/avatar/haydenwilliamhefford@yahoo.com?d=identicon))
+
+
+### Test
+
+* test log 3 - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+
+
+### Test
+
+* Test Log 1 - 2025-04-27 (by [BartholomewGG](https://www.gravatar.com/avatar/Bartholomew.G.G@Gmail.com?d=identicon))
+
+
+### Update
+
+* Update game_manager.gd - 2025-04-27 (by [David Mulgrew](https://www.gravatar.com/avatar/bigmonmulgrew@users.noreply.github.com?d=identicon))
+
+
+### Updating
+
+* updating test logs - 2025-04-27 (by [BartholomewGG](https://www.gravatar.com/avatar/Bartholomew.G.G@Gmail.com?d=identicon))
+
+
+### Pull Requests
+
+* Merge pull request [#29](https://github.com/bigmonmulgrew/Year2-Overscoped/issues/29) from bigmonmulgrew/Bug-Fixes-HH
+* Merge pull request [#27](https://github.com/bigmonmulgrew/Year2-Overscoped/issues/27) from bigmonmulgrew/Bugfix-Decision-makign-game-not-timing-out
+* Merge pull request [#28](https://github.com/bigmonmulgrew/Year2-Overscoped/issues/28) from bigmonmulgrew/Test-Log-GG
+
+
 <a name="v0.1.0"></a>
 ## v0.1.0
 
