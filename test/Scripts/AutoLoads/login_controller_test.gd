@@ -12,4 +12,4 @@ func test_authenticate_with_thumb() -> void:
 	assert_bool(LoginController.authenticate_with_thumb("dsadsafgdsfdgfad")).is_false()
 
 func test_authenticate() -> void:
-	assert_bool(LoginController.authenticate()).is_true()
+	assert_bool(LoginController.authenticate()).is_false()	 # No details of the user are provided without thumb so should always be false
