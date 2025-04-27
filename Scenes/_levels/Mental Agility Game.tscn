@@ -137,6 +137,7 @@ position = Vector2(900, 675)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("11_cvfsg")
 
+[connection signal="timer_finished" from="GameTimer" to="." method="_on_game_timer_timer_finished"]
 [connection signal="input_event" from="Area2D_0" to="." method="_on_area_2d_input_event" binds= [0]]
 [connection signal="input_event" from="Area2D_1" to="." method="_on_area_2d_input_event" binds= [1]]
 [connection signal="input_event" from="Area2D_2" to="." method="_on_area_2d_input_event" binds= [2]]
