@@ -58,6 +58,7 @@ func _pick_random_unique() -> int:
 func _load_next_game() -> void:
 	sessionsComplete += 1
 	var gameType = _pick_random_unique()
+	print("##### Game Manager, game selected " + str(gameType))
 	match gameType:
 		0:
 			LevelManager.load_level(LevelManager.get_random_focus_level())
