@@ -1,4 +1,5 @@
 extends Game
+class_name ReactionGame
 
 @export var cycle_timer: float
 @export var win_score: int
