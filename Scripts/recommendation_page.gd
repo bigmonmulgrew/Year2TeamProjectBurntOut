@@ -10,6 +10,8 @@ func _on_menu_button_down() -> void:
 
 func _ready() -> void:
 	var score:int = GameManager.totalScore
+	print("recommendation page.gd: game manager score " + str(GameManager.totalScore))
+	print("recommendation page.gd: game manager score " + str(score))
 	score_visual.text =  str(score) + "/50"
 	
 	# Pick a random piece of personal advice

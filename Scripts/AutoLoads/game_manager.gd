@@ -71,7 +71,7 @@ func _load_next_game() -> void:
 		4:
 			LevelManager.load_level(LevelManager.get_random_memory_level())
 		-1:
-			LevelManager.load_main_menu()
+			LevelManager.load_recommendation_page()
 	
 func next_level(score: float = 0) -> void:
 	print("Loading new game from scene: " + get_tree().current_scene.name)
